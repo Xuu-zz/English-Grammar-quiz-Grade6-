@@ -1,0 +1,301 @@
+{
+  "schema": "yl6-quiz/1",
+  "book": "译林版（三起）六年级上册",
+  "edition": "2024 版（2026 秋启用）",
+  "note": "这是题库格式样例，覆盖全部 5 种题型。真实项目应把 U1–U8 每单元都补齐 6 关。",
+  "variants": ["past_form", "past_neg", "past_yesno", "be_past", "wh_word", "word_family", "verb_pattern", "plural", "ordinal", "prep_time", "sva", "continuous", "tense_signal", "whose", "transform_neg", "transform_ask", "phrase_fill", "turn_into"],
+  "units": [
+    {
+      "id": "u2",
+      "no": "U2",
+      "title": "Honesty",
+      "cn": "诚实",
+      "theme": "诚实与勇气",
+      "grammarCore": ["一般过去时四种句式", "规则动词 -ed 四条加法", "名词性物主代词", "抽象名词作主语"],
+      "levels": [
+        { "id": "u2-l1", "no": "L1", "name": "词汇关", "kind": "vocab", "total": 10, "pass": 8 },
+        { "id": "u2-l2", "no": "L2", "name": "语法基础", "kind": "grammar", "total": 10, "pass": 8 },
+        { "id": "u2-l3", "no": "L3", "name": "语法进阶", "kind": "grammar_plus", "total": 10, "pass": 8 },
+        { "id": "u2-l4", "no": "L4", "name": "语篇关", "kind": "reading", "total": 5, "pass": 4 },
+        { "id": "u2-l5", "no": "L5", "name": "单元真题卷", "kind": "paper", "total": 15, "pass": 12 },
+        { "id": "u2-l6", "no": "L6", "name": "挑战关", "kind": "challenge", "total": 12, "pass": 10, "note": "全部现场生成变式题，限时" }
+      ],
+      "questions": [
+        {
+          "id": "u2-l1-q1",
+          "level": "u2-l1",
+          "type": "choice",
+          "tag": "word_family",
+          "stem": "Which word means “诚实”?",
+          "options": ["honest", "honesty", "honestly", "dishonest"],
+          "answer": "B",
+          "point": "词族：honest / honesty",
+          "why": "题问的是名词“诚实”，用 honesty。honest 是形容词“诚实的”，honestly 是副词，dishonest 是“不诚实的”。",
+          "knowledge": {
+            "title": "honest 词族",
+            "formula": "honest(adj. 诚实的) → honesty(n. 诚实) → honestly(adv. 诚实地) → dishonest(adj. 不诚实的)",
+            "example": "He is an honest boy. Honesty is important.",
+            "trap": "抽象名词作主语，谓语用单数：Honesty is important.（× are）"
+          },
+          "src": "U2 教材"
+        },
+        {
+          "id": "u2-l1-q2",
+          "level": "u2-l1",
+          "type": "fill",
+          "tag": "word_family",
+          "stem": "He repaired the book ________ (careful).",
+          "answer": "carefully",
+          "accept": ["carefully"],
+          "point": "形容词 → 副词",
+          "why": "空格修饰动词 repaired，要用副词；careful 的副词是 carefully。",
+          "knowledge": {
+            "title": "形容词变副词",
+            "formula": "形容词 + -ly → 副词（careful→carefully, quiet→quietly, happy→happily）",
+            "example": "He repaired the book carefully.",
+            "trap": "修饰名词用形容词，修饰动词用副词：a careful boy / do it carefully"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l2-q1",
+          "level": "u2-l2",
+          "type": "choice",
+          "tag": "tense_signal",
+          "stem": "Sam ______ a storybook on his way home yesterday.",
+          "options": ["find", "finds", "found", "finding"],
+          "answer": "C",
+          "point": "一般过去时 · 时间标志词",
+          "why": "yesterday 说明动作已经发生，要用过去式；find 的过去式是 found。A、B 是现在时，D 是非谓语，都不能单独作谓语。",
+          "knowledge": {
+            "title": "一般过去时",
+            "formula": "肯定：主语 + 过去式／否定：主语 + didn't + 原形／疑问：Did + 主语 + 原形?",
+            "example": "Sam found a book. / Sam didn't find it. / Did Sam find it?",
+            "trap": "didn't 后面一定回原形（× didn't found）"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l2-q2",
+          "level": "u2-l2",
+          "type": "choice",
+          "tag": "past_yesno",
+          "stem": "— Did you see my storybook yesterday?\n— No, I ______.",
+          "options": ["don't", "didn't", "wasn't", "haven't"],
+          "answer": "B",
+          "point": "过去时一般疑问句的简答",
+          "why": "Did 提问必须用 did / didn't 回答，时态要一致。No, I don't. 是本单元最大的失分点。",
+          "knowledge": {
+            "title": "Did 问句怎么答",
+            "formula": "Yes, I did. / No, I didn't. （不能用 do/don't，也不能用 was）",
+            "example": "— Did Sam break the glass? — Yes, he did.",
+            "trap": "be 动词问句才用 was/were 答：— Were you at home? — Yes, I was."
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l3-q1",
+          "level": "u2-l3",
+          "type": "fill",
+          "tag": "past_neg",
+          "stem": "My father ________ (not go) to work yesterday.",
+          "answer": "didn't go",
+          "accept": ["didn't go", "did not go"],
+          "point": "过去时否定：didn't + 原形",
+          "why": "yesterday 是过去时间，否定用 didn't；didn't 后面动词必须还原成 go。",
+          "knowledge": {
+            "title": "过去时否定",
+            "formula": "主语 + didn't + 动词原形",
+            "example": "He didn't go to school yesterday.",
+            "trap": "× didn't went／× didn't goes"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l3-q2",
+          "level": "u2-l3",
+          "type": "transform",
+          "tag": "transform_ask",
+          "stem": "对划线部分提问（last week）：\nSam broke the book last week.",
+          "answer": "When did Sam break the book?",
+          "accept": ["When did Sam break the book?", "When did Sam break the book"],
+          "point": "过去时特殊疑问句改写",
+          "why": "划线部分是时间 → 用 When；原句是实义动词 broke，要加 did 并把 broke 还原为 break。",
+          "knowledge": {
+            "title": "对划线部分提问（过去时）",
+            "formula": "疑问词 + did + 主语 + 动词原形 + 其他?",
+            "example": "He developed hybrid rice in 1973. → When did he develop hybrid rice?",
+            "trap": "did 后不能再用过去式（× When did Sam broke the book?）"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l4-q1",
+          "level": "u2-l4",
+          "type": "reading",
+          "tag": "reading",
+          "passageId": "p_u2_1",
+          "passage": {
+            "title": "阅读 · 一则诚实的日记",
+            "text": "Sunday, April 6th   Rainy\nToday was a bad day for me. In the afternoon, I played football in the classroom. The ball hit Mrs Li's glass and it fell off the desk. I was afraid, so I put the broken glass into the bin and said nothing.\nAt night I could not sleep. I kept thinking about it. My mother saw my face and asked, “What's wrong?” I told her the truth.\n“Everyone makes mistakes,” she said. “The important thing is to be honest.”\nThis morning I went to Mrs Li's office and said sorry. To my surprise, she smiled. “Thank you for telling me the truth,” she said. “That is more important than the glass.”\nI felt much better. Now I know: honesty is not easy, but it always makes us free."
+          },
+          "stem": "What did the writer break?",
+          "options": ["A window.", "Mrs Li's glass.", "A football.", "A desk."],
+          "answer": "B",
+          "point": "阅读理解 · 细节题",
+          "why": "原文定位：The ball hit Mrs Li's glass and it fell off the desk. —— 打碎的是 Mrs Li 的玻璃杯。",
+          "knowledge": {
+            "title": "细节题怎么做",
+            "formula": "读题干 → 找关键词（break / glass）→ 回原文定位 → 比对选项",
+            "example": "题干 break ≈ 原文 hit … fell off / broken glass",
+            "trap": "不要凭印象选；先定位句子，再选答案"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l4-q2",
+          "level": "u2-l4",
+          "type": "reading",
+          "tag": "reading",
+          "passageId": "p_u2_1",
+          "stem": "What's the best title for the passage?",
+          "options": ["A Bad Day", "Telling the Truth", "Mrs Li's Glass", "A Football Match"],
+          "answer": "B",
+          "point": "阅读理解 · 主旨题",
+          "why": "全文围绕“犯错后说实话”展开，结尾点明 honesty is not easy, but it always makes us free. 其余三项只是细节。",
+          "knowledge": {
+            "title": "主旨/标题题",
+            "formula": "看首段 + 结尾句 + 反复出现的词；标题要能覆盖全文，不能只是某一段",
+            "example": "反复出现 truth / honest / honesty → 选 Telling the Truth",
+            "trap": "标题题最容易误选“最生动”的细节项"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l5-q1",
+          "level": "u2-l5",
+          "type": "cloze",
+          "tag": "cloze",
+          "passageId": "p_u2_2",
+          "passage": {
+            "title": "首字母填空 · 袁隆平",
+            "text": "Yuan Longping was a great Chinese s__1__. He was b__2__ in 1930 in Beijing. At an early age, he liked f__3__. When he grew up, he s__4__ farming. In 1964, he began to work on hybrid rice. It was very d__5__, but he never g__6__ up. He k__7__ thinking and trying, and he always stayed in the f__8__. In 1973, he d__9__ hybrid rice. Now it grows in many countries and f__10__ people all over the world."
+          },
+          "stem": "根据首字母提示填空，使短文完整。",
+          "blanks": [
+            { "n": "1", "answer": "scientist", "why": "a great + 名词，指“科学家”" },
+            { "n": "2", "answer": "born", "why": "be born in 1930 出生于 1930 年" },
+            { "n": "3", "answer": "farming", "why": "liked + 名词/动名词；farming 农业" },
+            { "n": "4", "answer": "studied", "why": "grew up 提示过去时；study→studied" },
+            { "n": "5", "answer": "difficult", "why": "It was very + 形容词" },
+            { "n": "6", "answer": "gave", "why": "never gave up 从不放弃" },
+            { "n": "7", "answer": "kept", "why": "keep doing → kept thinking" },
+            { "n": "8", "answer": "fields", "why": "in the fields 在田间，用复数" },
+            { "n": "9", "answer": "developed", "why": "developed hybrid rice 培育出杂交水稻" },
+            { "n": "10", "answer": "feeds", "why": "主语 it，一般现在时第三人称单数" }
+          ],
+          "point": "语篇填空：时态 + 词形 + 拼写",
+          "why": "先通读全文定时态（前半过去、最后一句现在），再逐空判断词性与形式。",
+          "knowledge": {
+            "title": "首字母填空四步",
+            "formula": "① 通读定时态 ② 看空前词性 ③ 想搭配 ④ 检查拼写与形式",
+            "example": "he never g___ up → 搭配 give up → 过去时 gave up",
+            "trap": "看到 never 也要看整句时态，别一律用原形"
+          },
+          "src": "U2–U3 拔高卷"
+        },
+        {
+          "id": "u2-l6-q1",
+          "level": "u2-l6",
+          "type": "choice",
+          "tag": "whose",
+          "gen": true,
+          "stem": "— Whose book is this?\n— It's ______. (这本书是她的)",
+          "options": ["her", "hers", "she", "her book"],
+          "answer": "B",
+          "point": "名词性物主代词单独使用",
+          "why": "问 whose 后回答“她的（书）”，要用名词性物主代词 hers，后面不能再加名词。her 是形容词性，必须后接名词。",
+          "knowledge": {
+            "title": "形容词性 vs 名词性物主代词",
+            "formula": "my/mine · your/yours · his/his · her/hers · our/ours · their/theirs",
+            "example": "This is her book. = This book is hers.",
+            "trap": "× hers book／× It's her."
+          },
+          "src": "变式生成"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "no": "U3",
+      "title": "Great people",
+      "cn": "伟人",
+      "theme": "人物与贡献",
+      "grammarCore": ["过去时特殊疑问句", "to do / doing 搭配", "see sb do / doing", "the first + 名词 + to do"],
+      "levels": [
+        { "id": "u3-l1", "no": "L1", "name": "词汇关", "kind": "vocab", "total": 10, "pass": 8 },
+        { "id": "u3-l2", "no": "L2", "name": "语法基础", "kind": "grammar", "total": 10, "pass": 8 },
+        { "id": "u3-l3", "no": "L3", "name": "语法进阶", "kind": "grammar_plus", "total": 10, "pass": 8 },
+        { "id": "u3-l4", "no": "L4", "name": "语篇关", "kind": "reading", "total": 5, "pass": 4 },
+        { "id": "u3-l5", "no": "L5", "name": "单元真题卷", "kind": "paper", "total": 15, "pass": 12 },
+        { "id": "u3-l6", "no": "L6", "name": "挑战关", "kind": "challenge", "total": 12, "pass": 10 }
+      ],
+      "questions": [
+        {
+          "id": "u3-l2-q1",
+          "level": "u3-l2",
+          "type": "choice",
+          "tag": "verb_pattern",
+          "stem": "He never gave up ______ new ideas.",
+          "options": ["try", "to try", "trying", "tried"],
+          "answer": "C",
+          "point": "give up + doing",
+          "why": "give up 后面接动名词（give up doing sth）；× give up to do 是典型错误。",
+          "knowledge": {
+            "title": "哪些动词后面只能 doing",
+            "formula": "enjoy / keep / finish / practise / give up / be good at / thanks for / how about + doing",
+            "example": "He kept thinking. / Thanks for helping me.",
+            "trap": "stop doing（停止正在做的事）≠ stop to do（停下来去做另一件事）"
+          },
+          "src": "U3 教材"
+        },
+        {
+          "id": "u3-l3-q1",
+          "level": "u3-l3",
+          "type": "fill",
+          "tag": "verb_pattern",
+          "stem": "Marie Curie was the first woman ________ (win) a Nobel Prize.",
+          "answer": "to win",
+          "accept": ["to win"],
+          "point": "the first + 名词 + to do",
+          "why": "序数词 the first 修饰名词时，后面用动词不定式作定语，to 不能省。",
+          "knowledge": {
+            "title": "序数词 + to do",
+            "formula": "the first / second / last + 名词 + to do sth",
+            "example": "She was the first woman to win the prize.",
+            "trap": "× the first woman win／× winning"
+          },
+          "src": "U3 教材"
+        },
+        {
+          "id": "u3-l3-q2",
+          "level": "u3-l3",
+          "type": "choice",
+          "tag": "sva",
+          "stem": "Everyone ______ a dream. We should work hard.",
+          "options": ["have", "has", "is having", "had"],
+          "answer": "B",
+          "point": "不定代词作主语",
+          "why": "everyone 作主语时谓语用第三人称单数；本句讲普遍事实，用一般现在时 has。",
+          "knowledge": {
+            "title": "everyone / someone 作主语",
+            "formula": "everyone / everybody / someone / nobody + 单数谓语",
+            "example": "Everyone has a dream. / Nobody knows the answer.",
+            "trap": "× Everyone have；× Everyone are here."
+          },
+          "src": "U3 教材"
+        }
+      ]
+    }
+  ]
+}
